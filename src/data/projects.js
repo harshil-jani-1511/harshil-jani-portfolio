@@ -23,11 +23,11 @@ export const projects = [
     slug: 'fold-and-file', name: 'Fold & File', category: 'Document management',
     tagline: 'A document platform for collecting, processing, and categorizing incoming documents.',
     summary: 'Full-stack Laravel development with IMAP email ingestion, custom PHP document parsing, and structured storage.',
-    role: 'Backend & Frontend Developer', stack: ['Laravel', 'PHP', 'MySQL', 'REST APIs', 'IMAP'],
+    role: 'Backend & Frontend Developer', stack: ['Laravel', 'PHP', 'MySQL', 'REST APIs', 'IMAP', 'Stripe', 'Twilio SMS', 'AWS S3'],
     challenge: 'Users needed a repeatable way to collect documents arriving by email and identify important information without manually reviewing every item.',
     solution: 'Built an IMAP-driven ingestion flow followed by custom PHP line-by-line parsing and key/value matching, with exception handling and an uncategorized state for documents needing attention.',
     impact: 'Reduced repetitive document handling and made failed or unclassified documents visible for follow-up.',
-    highlights: ['Worked on the project for more than 1.5 years across backend and frontend development.', 'Connected to mail servers using IMAP to fetch incoming emails and attachments.', 'Processed attachments with custom PHP logic, reading content line by line and matching required keys and values.', 'Mapped extracted details to required fields and stored processed information in MySQL.', 'Handled invalid documents, duplicates, and processing failures.', 'Created an uncategorized-document path for items that could not be classified.', 'Worked on REST APIs, third-party integrations, database operations, maintenance, and bug fixes.']
+    highlights: ['Worked on the project for more than 1.5 years across backend and frontend development.', 'Connected to mail servers using IMAP to fetch incoming emails and attachments.', 'Processed attachments with custom PHP logic, reading content line by line and matching required keys and values.', 'Mapped extracted details to required fields and stored processed information in MySQL.', 'Handled invalid documents, duplicates, and processing failures.', 'Created an uncategorized-document path for items that could not be classified.', 'Integrated Stripe for payment processing and Twilio for SMS messaging.', 'Used AWS S3 for document and file storage.', 'Worked on REST APIs, third-party integrations, database operations, maintenance, and bug fixes.']
   },
   {
     slug: '3b-plp', name: '3B PLP', category: 'Private-label e-commerce',

@@ -15,6 +15,6 @@ const otherProjectsForCaseStudy = computed(() => projects.filter(item => item.sl
   <ProjectShow v-else-if="route.name === 'project' && project" :project="project" :other-projects="otherProjectsForCaseStudy" />
   <main v-else class="min-h-screen bg-[#080b14] px-6 py-32 text-center text-white">
     <h1 class="text-4xl font-semibold">Project not found</h1>
-    <a href="#/" class="mt-6 inline-block text-violet-200">Return to portfolio →</a>
+    <RouterLink to="/" class="mt-6 inline-block text-violet-200">Return to portfolio →</RouterLink>
   </main>
 </template>
