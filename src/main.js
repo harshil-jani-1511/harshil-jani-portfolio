@@ -4,7 +4,7 @@ import App from './App.vue'
 import './assets/style.css'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'home', component: () => import('./pages/Home.vue') },
     { path: '/projects/:slug', name: 'project', component: () => import('./pages/ProjectShow.vue') },
